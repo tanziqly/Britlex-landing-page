@@ -1,0 +1,132 @@
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.banner-desc__container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+
+    p {
+        font-size: 24px;
+        margin: 20px 0 60px 0;
+    }
+
+    button {
+        @extend %btn-main;
+        padding: 30px 110px;
+        font-size: 36px;
+        align-self: flex-start;
+        white-space: nowrap;
+    }
+}
+
+.banner-img__container {
+
+    img {
+        height: auto;
+        width: 100%;
+        max-width: 661px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .banner-desc__container {
+        width: 65%;
+
+        h1 {
+            margin-top: 0 !important;
+            font-size: 48px;
+            line-height: 64px;
+        }
+
+        p {
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+
+        button {
+            font-size: 24px;
+            padding: 20px 75px;
+        }
+
+        .banner-img__container {
+            img {
+                max-width: 460px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    
+    .banner-desc__container {
+        width: 45%;
+
+        h1 {
+            font-size: 36px;
+            line-height: 45px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        button {
+            font-size: 18px;
+            padding: 20px 65pxs;
+        }
+    }
+
+    .banner-img__container {
+        img {
+            max-width: 352px;
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .banner {
+        flex-direction: column-reverse;
+    }
+
+    .banner-desc__container {
+        width: 100%;
+        text-align: center;
+
+        h1 {
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        button {
+            font-size: 18px;
+            padding: 25px 100px;
+            align-self: center;
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .banner-desc__container {
+        h1 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        button {
+            font-size: 16px;
+            padding: 15px 100px;
+        }
+    }
+}

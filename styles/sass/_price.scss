@@ -1,0 +1,166 @@
+.price__container {
+    display: flex;
+    height: 100%;
+    gap: 30px;
+}
+
+.price__items {
+    display: flex;
+    flex-direction: column;
+
+    p {
+        font-size: 20px;
+        color: $primary-color;
+    }
+
+
+    img {
+       height: auto;
+       width: 100%;
+    }
+}
+
+.price__cont {
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+    gap: 8px;
+    background-color: #eeeeee;
+    border-radius: 5px;
+    padding: 0 25px;
+}
+
+.price-img {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.price {
+    font-size: 30px;
+    color: #263238;
+}
+
+.price_desc {
+    font-size: 18px;
+    color: #546269;
+}
+
+.price1 {
+    img {
+        max-width: 311px;
+    }
+}
+
+.price2 {
+    img {
+        max-width: 391px;
+    }
+}
+
+.price2 {
+    img {
+        max-width: 340px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .price1 {
+        img {
+            max-width: 222px;
+        }
+    }
+    
+    .price2 {
+        img {
+            max-width: 267px;
+        }
+    }
+    
+    .price3 {
+        img {
+            max-width: 242px;
+        }
+    }
+
+    .price__container {
+        h3 {
+            font-size: 22px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+
+    .price {
+        font-size: 24px;
+    }
+
+    .price_desc {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .price__container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .price1 {
+        img {
+            max-width: 291px;
+        }
+    }
+    
+    .price2 {
+        img {
+            max-width: 314px;
+        }
+    }
+    
+    .price3 {
+        img {
+            max-width: 253px;
+        }
+    }
+
+    .price__items {
+        h3 {
+            text-align: center;
+            font-size: 24px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 14px;
+        }
+    }
+
+    .price__cont {
+        align-self: center;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    .price__items {
+        h3 {
+            font-size: 18px;
+        }
+        
+        p {
+            font-size: 13px;
+        }
+    }
+
+    .price {
+        font-size: 18px;
+    }
+
+    .price_desc {
+        font-size: 14px;
+    }
+}
