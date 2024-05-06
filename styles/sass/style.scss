@@ -29,6 +29,10 @@ $font: 'Poppins';
 @import 'contact';
 @import 'footer';
 
+* {
+    scroll-behavior: smooth;
+}
+
 body {
     color: $primary-color;
     display: flex;
