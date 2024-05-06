@@ -757,6 +757,11 @@ footer {
     font-size: 11px;
   }
 }
+
+* {
+    scroll-behavior: smooth;
+}
+
 body {
   color: #8F95A5;
   display: flex;
